@@ -1,6 +1,26 @@
 <template>
-  <router-view/>
+  <div class="wrapper">
+    <Navbar/> 
+    <main class="container-fluid">
+      <router-view/>
+    </main>
+    <Footer/>
+  </div>
 </template>
+
+<script>
+// Importing Navbar component from the components folder
+import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  }
+}
+
+</script>
 
 <style>
 
